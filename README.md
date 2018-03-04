@@ -2,17 +2,17 @@
 
 This repository is a demo for how to setup proxying for running locally. This can be useful for simulating the environment your frontend will be deployed in.
 
-# Films API
+# Video API
 
 ```
-cd filmsapi
+cd videoapi
 npm run start
 ```
 
-# Books API
+# Library API
 
 ```
-cd booksapi
+cd libraryapi
 npm run start
 ```
 
