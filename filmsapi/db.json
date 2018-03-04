@@ -1,0 +1,14 @@
+{
+  "films": [
+    {
+      "id": 1,
+      "title": "Bladerunner",
+      "director": "Ridley Scott"
+    },
+    {
+      "id": 2,
+      "title": "Gattaca",
+      "director": "Andrew Niccol"
+    }
+  ]
+}

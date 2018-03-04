@@ -1,0 +1,15 @@
+{
+  "name": "booksapi",
+  "version": "1.0.0",
+  "description": "REST API",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 10000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Russell",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.12.1"
+  }
+}

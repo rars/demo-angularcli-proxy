@@ -1,0 +1,19 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Catch-22",
+      "author": "Joseph Heller"
+    },
+    {
+      "id": 2,
+      "title": "Brave New World",
+      "author": "Aldous Huxley"
+    },
+    {
+      "id": 3,
+      "title": "Do Androids Dream of Electric Sheep?",
+      "author": "Philip K. Dick"
+    }
+  ]
+}
