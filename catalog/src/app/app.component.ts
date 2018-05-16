@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { LibraryService } from './services/library.service';
 import { VideoService } from './services/video.service';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { IBook } from './models/book.interface';
 import { IFilm } from './models/film.interface';
 import { ConfigService } from './services/config.service';
-
-import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-root',
@@ -24,8 +23,9 @@ export class AppComponent {
       private libraryService: LibraryService,
       private videoService: VideoService,
       private config: ConfigService) {
-    this.publicKey$ = config.getConfig()
-      .map(configValues => configValues.publicKey);
+    this.publicKey$ = config.getConfig().pipe(
+      map(configValues => configValues.publicKey)
+    );
     this.books$ = libraryService.getBooks();
     this.films$ = videoService.getFilms();
   }
